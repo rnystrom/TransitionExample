@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
     </dependencies>
     <scenes>
-        <!--Storyboard Main Controller-->
+        <!--Storyboard Controller-->
         <scene sceneID="bF1-8F-uqF">
             <objects>
-                <viewController id="cpS-dH-NIq" customClass="StoryboardMainController" sceneMemberID="viewController">
+                <viewController id="cpS-dH-NIq" customClass="StoryboardController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Z0K-wK-Uya"/>
                         <viewControllerLayoutGuide type="bottom" id="i2e-nc-1qI"/>
@@ -33,9 +33,17 @@
                                     <segue destination="vJ7-o6-o67" kind="modal" id="2ak-l6-LyR"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Testing Storyboard" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cLv-OP-Y7g">
+                                <rect key="frame" x="312" y="53" width="145" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.074509803920000006" green="0.55294117649999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstAttribute="centerX" secondItem="cLv-OP-Y7g" secondAttribute="centerX" id="XF0-sa-DrH"/>
                             <constraint firstAttribute="centerX" secondItem="X0E-ga-u1g" secondAttribute="centerX" id="b0o-2U-4De"/>
                             <constraint firstAttribute="centerY" secondItem="X0E-ga-u1g" secondAttribute="centerY" id="o2g-Rn-pKG"/>
                         </constraints>
@@ -45,10 +53,10 @@
             </objects>
             <point key="canvasLocation" x="-509" y="-701"/>
         </scene>
-        <!--Modal Controller-->
+        <!--Storyboard Modal Controller-->
         <scene sceneID="zBS-dd-rpO">
             <objects>
-                <viewController id="vJ7-o6-o67" customClass="ModalController" sceneMemberID="viewController">
+                <viewController id="vJ7-o6-o67" customClass="StoryboardModalController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="MPk-RW-GPx"/>
                         <viewControllerLayoutGuide type="bottom" id="62T-Mf-oAn"/>

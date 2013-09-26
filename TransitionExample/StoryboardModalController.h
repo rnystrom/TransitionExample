@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ModalController : UIViewController
+@interface StoryboardModalController : UIViewController
 
 @end

@@ -12,7 +12,7 @@
 		862E546A1790810800AF5AC5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 862E54691790810800AF5AC5 /* UIKit.framework */; };
 		862E54701790810800AF5AC5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 862E546E1790810800AF5AC5 /* InfoPlist.strings */; };
 		862E54721790810800AF5AC5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 862E54711790810800AF5AC5 /* main.m */; };
-		862E54761790810800AF5AC5 /* RNAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 862E54751790810800AF5AC5 /* RNAppDelegate.m */; };
+		862E54761790810800AF5AC5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 862E54751790810800AF5AC5 /* AppDelegate.m */; };
 		862E54781790810800AF5AC5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 862E54771790810800AF5AC5 /* Images.xcassets */; };
 		862E547F1790810800AF5AC5 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 862E547E1790810800AF5AC5 /* XCTest.framework */; };
 		862E54801790810800AF5AC5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 862E54651790810800AF5AC5 /* Foundation.framework */; };
@@ -21,15 +21,17 @@
 		862E548B1790810800AF5AC5 /* TransitionExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 862E548A1790810800AF5AC5 /* TransitionExampleTests.m */; };
 		862E549C179082C500AF5AC5 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 862E549A179082C500AF5AC5 /* bg.png */; };
 		862E549D179082C500AF5AC5 /* bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 862E549B179082C500AF5AC5 /* bg@2x.png */; };
-		862E549E1790834400AF5AC5 /* MainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 862E54981790812E00AF5AC5 /* MainController.m */; };
-		862E549F1790834A00AF5AC5 /* MainController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 862E54991790812E00AF5AC5 /* MainController.xib */; };
-		862E54A01790834D00AF5AC5 /* LoginController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 862E54961790811E00AF5AC5 /* LoginController.xib */; };
-		862E54A11790835100AF5AC5 /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 862E54951790811E00AF5AC5 /* LoginController.m */; };
-		862E54A4179089CA00AF5AC5 /* LoginTransitionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 862E54A3179089AF00AF5AC5 /* LoginTransitionController.m */; };
+		862E54A4179089CA00AF5AC5 /* TransitionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 862E54A3179089AF00AF5AC5 /* TransitionController.m */; };
 		865B8C9617F462FA005ADA91 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 865B8C9517F462FA005ADA91 /* Storyboard.storyboard */; };
-		865B8C9917F463E5005ADA91 /* StoryboardMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 865B8C9817F463E5005ADA91 /* StoryboardMainController.m */; };
-		865B8C9C17F46611005ADA91 /* ModalController.m in Sources */ = {isa = PBXBuildFile; fileRef = 865B8C9B17F46611005ADA91 /* ModalController.m */; };
-		86A9968F17ECB6A500B91463 /* LoginTransitionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A9968E17ECB6A500B91463 /* LoginTransitionDelegate.m */; };
+		865B8C9917F463E5005ADA91 /* StoryboardController.m in Sources */ = {isa = PBXBuildFile; fileRef = 865B8C9817F463E5005ADA91 /* StoryboardController.m */; };
+		865B8C9C17F46611005ADA91 /* StoryboardModalController.m in Sources */ = {isa = PBXBuildFile; fileRef = 865B8C9B17F46611005ADA91 /* StoryboardModalController.m */; };
+		865B8CA217F47578005ADA91 /* NIBController.m in Sources */ = {isa = PBXBuildFile; fileRef = 865B8CA017F47578005ADA91 /* NIBController.m */; };
+		865B8CA317F47578005ADA91 /* NIBController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 865B8CA117F47578005ADA91 /* NIBController.xib */; };
+		865B8CA717F47586005ADA91 /* NIBModalController.m in Sources */ = {isa = PBXBuildFile; fileRef = 865B8CA517F47586005ADA91 /* NIBModalController.m */; };
+		865B8CA817F47586005ADA91 /* NIBModalController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 865B8CA617F47586005ADA91 /* NIBModalController.xib */; };
+		865B8CAB17F479EC005ADA91 /* CodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 865B8CAA17F479EC005ADA91 /* CodeController.m */; };
+		865B8CAE17F479F5005ADA91 /* CodeModalController.m in Sources */ = {isa = PBXBuildFile; fileRef = 865B8CAD17F479F5005ADA91 /* CodeModalController.m */; };
+		86A9968F17ECB6A500B91463 /* TransitionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A9968E17ECB6A500B91463 /* TransitionDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,31 +53,35 @@
 		862E546F1790810800AF5AC5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		862E54711790810800AF5AC5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		862E54731790810800AF5AC5 /* TransitionExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TransitionExample-Prefix.pch"; sourceTree = "<group>"; };
-		862E54741790810800AF5AC5 /* RNAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNAppDelegate.h; sourceTree = "<group>"; };
-		862E54751790810800AF5AC5 /* RNAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNAppDelegate.m; sourceTree = "<group>"; };
+		862E54741790810800AF5AC5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		862E54751790810800AF5AC5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = TransitionExample/AppDelegate.m; sourceTree = "<group>"; };
 		862E54771790810800AF5AC5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		862E547D1790810800AF5AC5 /* TransitionExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransitionExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		862E547E1790810800AF5AC5 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		862E54861790810800AF5AC5 /* TransitionExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TransitionExampleTests-Info.plist"; sourceTree = "<group>"; };
 		862E54881790810800AF5AC5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		862E548A1790810800AF5AC5 /* TransitionExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransitionExampleTests.m; sourceTree = "<group>"; };
-		862E54941790811E00AF5AC5 /* LoginController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginController.h; sourceTree = "<group>"; };
-		862E54951790811E00AF5AC5 /* LoginController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginController.m; sourceTree = "<group>"; };
-		862E54961790811E00AF5AC5 /* LoginController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginController.xib; sourceTree = "<group>"; };
-		862E54971790812E00AF5AC5 /* MainController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainController.h; sourceTree = "<group>"; };
-		862E54981790812E00AF5AC5 /* MainController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainController.m; sourceTree = "<group>"; };
-		862E54991790812E00AF5AC5 /* MainController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainController.xib; sourceTree = "<group>"; };
 		862E549A179082C500AF5AC5 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = SOURCE_ROOT; };
 		862E549B179082C500AF5AC5 /* bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg@2x.png"; sourceTree = SOURCE_ROOT; };
-		862E54A2179089AF00AF5AC5 /* LoginTransitionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginTransitionController.h; sourceTree = "<group>"; };
-		862E54A3179089AF00AF5AC5 /* LoginTransitionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginTransitionController.m; sourceTree = "<group>"; };
+		862E54A2179089AF00AF5AC5 /* TransitionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransitionController.h; sourceTree = "<group>"; };
+		862E54A3179089AF00AF5AC5 /* TransitionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransitionController.m; sourceTree = "<group>"; };
 		865B8C9517F462FA005ADA91 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
-		865B8C9717F463E5005ADA91 /* StoryboardMainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryboardMainController.h; sourceTree = "<group>"; };
-		865B8C9817F463E5005ADA91 /* StoryboardMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryboardMainController.m; sourceTree = "<group>"; };
-		865B8C9A17F46611005ADA91 /* ModalController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalController.h; sourceTree = "<group>"; };
-		865B8C9B17F46611005ADA91 /* ModalController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalController.m; sourceTree = "<group>"; };
-		86A9968D17ECB6A500B91463 /* LoginTransitionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginTransitionDelegate.h; sourceTree = "<group>"; };
-		86A9968E17ECB6A500B91463 /* LoginTransitionDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginTransitionDelegate.m; sourceTree = "<group>"; };
+		865B8C9717F463E5005ADA91 /* StoryboardController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryboardController.h; sourceTree = "<group>"; };
+		865B8C9817F463E5005ADA91 /* StoryboardController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryboardController.m; sourceTree = "<group>"; };
+		865B8C9A17F46611005ADA91 /* StoryboardModalController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryboardModalController.h; sourceTree = "<group>"; };
+		865B8C9B17F46611005ADA91 /* StoryboardModalController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryboardModalController.m; sourceTree = "<group>"; };
+		865B8C9F17F47578005ADA91 /* NIBController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIBController.h; sourceTree = "<group>"; };
+		865B8CA017F47578005ADA91 /* NIBController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIBController.m; sourceTree = "<group>"; };
+		865B8CA117F47578005ADA91 /* NIBController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NIBController.xib; sourceTree = "<group>"; };
+		865B8CA417F47586005ADA91 /* NIBModalController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NIBModalController.h; sourceTree = "<group>"; };
+		865B8CA517F47586005ADA91 /* NIBModalController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIBModalController.m; sourceTree = "<group>"; };
+		865B8CA617F47586005ADA91 /* NIBModalController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NIBModalController.xib; sourceTree = "<group>"; };
+		865B8CA917F479EC005ADA91 /* CodeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodeController.h; sourceTree = "<group>"; };
+		865B8CAA17F479EC005ADA91 /* CodeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodeController.m; sourceTree = "<group>"; };
+		865B8CAC17F479F5005ADA91 /* CodeModalController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodeModalController.h; sourceTree = "<group>"; };
+		865B8CAD17F479F5005ADA91 /* CodeModalController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodeModalController.m; sourceTree = "<group>"; };
+		86A9968D17ECB6A500B91463 /* TransitionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitionDelegate.h; sourceTree = "<group>"; };
+		86A9968E17ECB6A500B91463 /* TransitionDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitionDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,10 +111,12 @@
 		862E54591790810800AF5AC5 = {
 			isa = PBXGroup;
 			children = (
-				862E546B1790810800AF5AC5 /* TransitionExample */,
-				862E54841790810800AF5AC5 /* TransitionExampleTests */,
-				862E54641790810800AF5AC5 /* Frameworks */,
-				862E54631790810800AF5AC5 /* Products */,
+				862E54751790810800AF5AC5 /* AppDelegate.m */,
+				865B8CAF17F47A34005ADA91 /* Code */,
+				865B8C9E17F466D8005ADA91 /* NIBs */,
+				865B8C9D17F466CC005ADA91 /* Storyboard */,
+				865B8CB017F47A3E005ADA91 /* Transition Delegate */,
+				862E546B1790810800AF5AC5 /* unimportant */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,6 +127,7 @@
 				862E547D1790810800AF5AC5 /* TransitionExampleTests.xctest */,
 			);
 			name = Products;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		862E54641790810800AF5AC5 /* Frameworks */ = {
@@ -130,24 +139,22 @@
 				862E547E1790810800AF5AC5 /* XCTest.framework */,
 			);
 			name = Frameworks;
+			path = ..;
 			sourceTree = "<group>";
 		};
-		862E546B1790810800AF5AC5 /* TransitionExample */ = {
+		862E546B1790810800AF5AC5 /* unimportant */ = {
 			isa = PBXGroup;
 			children = (
+				862E54841790810800AF5AC5 /* TransitionExampleTests */,
+				862E54641790810800AF5AC5 /* Frameworks */,
+				862E54631790810800AF5AC5 /* Products */,
 				862E549A179082C500AF5AC5 /* bg.png */,
 				862E549B179082C500AF5AC5 /* bg@2x.png */,
 				862E54771790810800AF5AC5 /* Images.xcassets */,
-				865B8C9E17F466D8005ADA91 /* NIBs */,
-				862E54A2179089AF00AF5AC5 /* LoginTransitionController.h */,
-				862E54A3179089AF00AF5AC5 /* LoginTransitionController.m */,
-				86A9968D17ECB6A500B91463 /* LoginTransitionDelegate.h */,
-				86A9968E17ECB6A500B91463 /* LoginTransitionDelegate.m */,
-				865B8C9D17F466CC005ADA91 /* Storyboard */,
-				862E54741790810800AF5AC5 /* RNAppDelegate.h */,
-				862E54751790810800AF5AC5 /* RNAppDelegate.m */,
+				862E54741790810800AF5AC5 /* AppDelegate.h */,
 				862E546C1790810800AF5AC5 /* Supporting Files */,
 			);
+			name = unimportant;
 			path = TransitionExample;
 			sourceTree = "<group>";
 		};
@@ -169,7 +176,7 @@
 				862E54851790810800AF5AC5 /* Supporting Files */,
 			);
 			path = TransitionExampleTests;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 		862E54851790810800AF5AC5 /* Supporting Files */ = {
 			isa = PBXGroup;
@@ -183,26 +190,52 @@
 		865B8C9D17F466CC005ADA91 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
-				865B8C9A17F46611005ADA91 /* ModalController.h */,
-				865B8C9B17F46611005ADA91 /* ModalController.m */,
+				865B8C9A17F46611005ADA91 /* StoryboardModalController.h */,
+				865B8C9B17F46611005ADA91 /* StoryboardModalController.m */,
 				865B8C9517F462FA005ADA91 /* Storyboard.storyboard */,
-				865B8C9717F463E5005ADA91 /* StoryboardMainController.h */,
-				865B8C9817F463E5005ADA91 /* StoryboardMainController.m */,
+				865B8C9717F463E5005ADA91 /* StoryboardController.h */,
+				865B8C9817F463E5005ADA91 /* StoryboardController.m */,
 			);
 			name = Storyboard;
+			path = TransitionExample;
 			sourceTree = "<group>";
 		};
 		865B8C9E17F466D8005ADA91 /* NIBs */ = {
 			isa = PBXGroup;
 			children = (
-				862E54941790811E00AF5AC5 /* LoginController.h */,
-				862E54951790811E00AF5AC5 /* LoginController.m */,
-				862E54961790811E00AF5AC5 /* LoginController.xib */,
-				862E54971790812E00AF5AC5 /* MainController.h */,
-				862E54981790812E00AF5AC5 /* MainController.m */,
-				862E54991790812E00AF5AC5 /* MainController.xib */,
+				865B8C9F17F47578005ADA91 /* NIBController.h */,
+				865B8CA017F47578005ADA91 /* NIBController.m */,
+				865B8CA117F47578005ADA91 /* NIBController.xib */,
+				865B8CA417F47586005ADA91 /* NIBModalController.h */,
+				865B8CA517F47586005ADA91 /* NIBModalController.m */,
+				865B8CA617F47586005ADA91 /* NIBModalController.xib */,
 			);
 			name = NIBs;
+			path = TransitionExample;
+			sourceTree = "<group>";
+		};
+		865B8CAF17F47A34005ADA91 /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				865B8CA917F479EC005ADA91 /* CodeController.h */,
+				865B8CAA17F479EC005ADA91 /* CodeController.m */,
+				865B8CAC17F479F5005ADA91 /* CodeModalController.h */,
+				865B8CAD17F479F5005ADA91 /* CodeModalController.m */,
+			);
+			name = Code;
+			path = TransitionExample;
+			sourceTree = "<group>";
+		};
+		865B8CB017F47A3E005ADA91 /* Transition Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				862E54A2179089AF00AF5AC5 /* TransitionController.h */,
+				862E54A3179089AF00AF5AC5 /* TransitionController.m */,
+				86A9968D17ECB6A500B91463 /* TransitionDelegate.h */,
+				86A9968E17ECB6A500B91463 /* TransitionDelegate.m */,
+			);
+			name = "Transition Delegate";
+			path = TransitionExample;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,13 +314,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				865B8CA317F47578005ADA91 /* NIBController.xib in Resources */,
 				862E54701790810800AF5AC5 /* InfoPlist.strings in Resources */,
-				862E54A01790834D00AF5AC5 /* LoginController.xib in Resources */,
-				862E549F1790834A00AF5AC5 /* MainController.xib in Resources */,
 				862E54781790810800AF5AC5 /* Images.xcassets in Resources */,
 				862E549C179082C500AF5AC5 /* bg.png in Resources */,
 				865B8C9617F462FA005ADA91 /* Storyboard.storyboard in Resources */,
 				862E549D179082C500AF5AC5 /* bg@2x.png in Resources */,
+				865B8CA817F47586005ADA91 /* NIBModalController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,14 +339,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				862E54761790810800AF5AC5 /* RNAppDelegate.m in Sources */,
-				862E54A11790835100AF5AC5 /* LoginController.m in Sources */,
-				865B8C9917F463E5005ADA91 /* StoryboardMainController.m in Sources */,
-				862E549E1790834400AF5AC5 /* MainController.m in Sources */,
-				86A9968F17ECB6A500B91463 /* LoginTransitionDelegate.m in Sources */,
-				865B8C9C17F46611005ADA91 /* ModalController.m in Sources */,
+				865B8CAE17F479F5005ADA91 /* CodeModalController.m in Sources */,
+				862E54761790810800AF5AC5 /* AppDelegate.m in Sources */,
+				865B8CA717F47586005ADA91 /* NIBModalController.m in Sources */,
+				865B8CA217F47578005ADA91 /* NIBController.m in Sources */,
+				865B8C9917F463E5005ADA91 /* StoryboardController.m in Sources */,
+				86A9968F17ECB6A500B91463 /* TransitionDelegate.m in Sources */,
+				865B8CAB17F479EC005ADA91 /* CodeController.m in Sources */,
+				865B8C9C17F46611005ADA91 /* StoryboardModalController.m in Sources */,
 				862E54721790810800AF5AC5 /* main.m in Sources */,
-				862E54A4179089CA00AF5AC5 /* LoginTransitionController.m in Sources */,
+				862E54A4179089CA00AF5AC5 /* TransitionController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

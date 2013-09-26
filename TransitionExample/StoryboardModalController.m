@@ -6,16 +6,12 @@
 //  Copyright (c) 2013 Ryan Nystrom. All rights reserved.
 //
 
-#import "ModalController.h"
+#import "StoryboardModalController.h"
 
-@implementation ModalController
+@implementation StoryboardModalController
 
 - (IBAction)onRemove:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
-}
-
-- (BOOL)shouldAutorotate {
-    return YES;
 }
 
 @end

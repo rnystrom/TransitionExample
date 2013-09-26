@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface LoginTransitionDelegate : NSObject
+@interface TransitionDelegate : NSObject
 <UIViewControllerTransitioningDelegate>
 
 @end

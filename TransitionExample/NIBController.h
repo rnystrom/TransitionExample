@@ -1,5 +1,5 @@
 //
-//  StoryboardMainController.h
+//  NIBViewController.h
 //  TransitionExample
 //
 //  Created by Ryan Nystrom on 9/26/13.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface StoryboardMainController : UIViewController
+@interface NIBController : UIViewController
 
 @end

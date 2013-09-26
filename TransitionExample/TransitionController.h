@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LoginTransitionController : NSObject
+@interface TransitionController : NSObject
 <UIViewControllerAnimatedTransitioning>
 
 @property (nonatomic, assign) BOOL isPresenting;
+
 @end

@@ -6,19 +6,19 @@
 //  Copyright (c) 2013 Ryan Nystrom. All rights reserved.
 //
 
-#import "LoginTransitionDelegate.h"
-#import "LoginTransitionController.h"
+#import "TransitionDelegate.h"
+#import "TransitionController.h"
 
-@implementation LoginTransitionDelegate
+@implementation TransitionDelegate
 
 - (id <UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source {
-    LoginTransitionController *controller = [[LoginTransitionController alloc] init];
+    TransitionController *controller = [[TransitionController alloc] init];
     controller.isPresenting = YES;
     return controller;
 }
 
 - (id <UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed {
-    LoginTransitionController *controller = [[LoginTransitionController alloc] init];
+    TransitionController *controller = [[TransitionController alloc] init];
     controller.isPresenting = NO;
     return controller;
 }

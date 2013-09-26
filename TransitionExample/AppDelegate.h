@@ -1,5 +1,5 @@
 //
-//  MainController.h
+//  RNAppDelegate.h
 //  TransitionExample
 //
 //  Created by Ryan Nystrom on 7/12/13.
@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MainController : UIViewController
+@interface AppDelegate : UIResponder <UIApplicationDelegate>
+
+@property (strong, nonatomic) UIWindow *window;
 
 @end

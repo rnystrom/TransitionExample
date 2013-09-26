@@ -21,18 +21,18 @@ static CGFloat backgroundOffset = 40;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    
-    self.backgroundImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bg"]];
-    self.backgroundImage.frame = CGRectMake(-backgroundOffset, -backgroundOffset, 768 + backgroundOffset*2, 1024 + backgroundOffset*2);
-    self.backgroundImage.contentMode = UIViewContentModeScaleToFill;
-    [self.window addSubview:self.backgroundImage];
-    
-    MainController *main = [[MainController alloc] init];
-    self.window.rootViewController = main;
-    
-    self.window.backgroundColor = [UIColor purpleColor];
-    [self.window makeKeyAndVisible];
+//    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+//    
+//    self.backgroundImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bg"]];
+//    self.backgroundImage.frame = CGRectMake(-backgroundOffset, -backgroundOffset, 768 + backgroundOffset*2, 1024 + backgroundOffset*2);
+//    self.backgroundImage.contentMode = UIViewContentModeScaleToFill;
+//    [self.window addSubview:self.backgroundImage];
+//    
+//    MainController *main = [[MainController alloc] init];
+//    self.window.rootViewController = main;
+//    
+//    self.window.backgroundColor = [UIColor purpleColor];
+//    [self.window makeKeyAndVisible];
     return YES;
 }
 

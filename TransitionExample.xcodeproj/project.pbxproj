@@ -26,6 +26,9 @@
 		862E54A01790834D00AF5AC5 /* LoginController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 862E54961790811E00AF5AC5 /* LoginController.xib */; };
 		862E54A11790835100AF5AC5 /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 862E54951790811E00AF5AC5 /* LoginController.m */; };
 		862E54A4179089CA00AF5AC5 /* LoginTransitionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 862E54A3179089AF00AF5AC5 /* LoginTransitionController.m */; };
+		865B8C9617F462FA005ADA91 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 865B8C9517F462FA005ADA91 /* Storyboard.storyboard */; };
+		865B8C9917F463E5005ADA91 /* StoryboardMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 865B8C9817F463E5005ADA91 /* StoryboardMainController.m */; };
+		865B8C9C17F46611005ADA91 /* ModalController.m in Sources */ = {isa = PBXBuildFile; fileRef = 865B8C9B17F46611005ADA91 /* ModalController.m */; };
 		86A9968F17ECB6A500B91463 /* LoginTransitionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A9968E17ECB6A500B91463 /* LoginTransitionDelegate.m */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +69,11 @@
 		862E549B179082C500AF5AC5 /* bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg@2x.png"; sourceTree = SOURCE_ROOT; };
 		862E54A2179089AF00AF5AC5 /* LoginTransitionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginTransitionController.h; sourceTree = "<group>"; };
 		862E54A3179089AF00AF5AC5 /* LoginTransitionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginTransitionController.m; sourceTree = "<group>"; };
+		865B8C9517F462FA005ADA91 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		865B8C9717F463E5005ADA91 /* StoryboardMainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryboardMainController.h; sourceTree = "<group>"; };
+		865B8C9817F463E5005ADA91 /* StoryboardMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryboardMainController.m; sourceTree = "<group>"; };
+		865B8C9A17F46611005ADA91 /* ModalController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalController.h; sourceTree = "<group>"; };
+		865B8C9B17F46611005ADA91 /* ModalController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalController.m; sourceTree = "<group>"; };
 		86A9968D17ECB6A500B91463 /* LoginTransitionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginTransitionDelegate.h; sourceTree = "<group>"; };
 		86A9968E17ECB6A500B91463 /* LoginTransitionDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginTransitionDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -130,16 +138,12 @@
 				862E549A179082C500AF5AC5 /* bg.png */,
 				862E549B179082C500AF5AC5 /* bg@2x.png */,
 				862E54771790810800AF5AC5 /* Images.xcassets */,
+				865B8C9E17F466D8005ADA91 /* NIBs */,
 				862E54A2179089AF00AF5AC5 /* LoginTransitionController.h */,
 				862E54A3179089AF00AF5AC5 /* LoginTransitionController.m */,
 				86A9968D17ECB6A500B91463 /* LoginTransitionDelegate.h */,
 				86A9968E17ECB6A500B91463 /* LoginTransitionDelegate.m */,
-				862E54941790811E00AF5AC5 /* LoginController.h */,
-				862E54951790811E00AF5AC5 /* LoginController.m */,
-				862E54961790811E00AF5AC5 /* LoginController.xib */,
-				862E54971790812E00AF5AC5 /* MainController.h */,
-				862E54981790812E00AF5AC5 /* MainController.m */,
-				862E54991790812E00AF5AC5 /* MainController.xib */,
+				865B8C9D17F466CC005ADA91 /* Storyboard */,
 				862E54741790810800AF5AC5 /* RNAppDelegate.h */,
 				862E54751790810800AF5AC5 /* RNAppDelegate.m */,
 				862E546C1790810800AF5AC5 /* Supporting Files */,
@@ -174,6 +178,31 @@
 				862E54871790810800AF5AC5 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		865B8C9D17F466CC005ADA91 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				865B8C9A17F46611005ADA91 /* ModalController.h */,
+				865B8C9B17F46611005ADA91 /* ModalController.m */,
+				865B8C9517F462FA005ADA91 /* Storyboard.storyboard */,
+				865B8C9717F463E5005ADA91 /* StoryboardMainController.h */,
+				865B8C9817F463E5005ADA91 /* StoryboardMainController.m */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		865B8C9E17F466D8005ADA91 /* NIBs */ = {
+			isa = PBXGroup;
+			children = (
+				862E54941790811E00AF5AC5 /* LoginController.h */,
+				862E54951790811E00AF5AC5 /* LoginController.m */,
+				862E54961790811E00AF5AC5 /* LoginController.xib */,
+				862E54971790812E00AF5AC5 /* MainController.h */,
+				862E54981790812E00AF5AC5 /* MainController.m */,
+				862E54991790812E00AF5AC5 /* MainController.xib */,
+			);
+			name = NIBs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +286,7 @@
 				862E549F1790834A00AF5AC5 /* MainController.xib in Resources */,
 				862E54781790810800AF5AC5 /* Images.xcassets in Resources */,
 				862E549C179082C500AF5AC5 /* bg.png in Resources */,
+				865B8C9617F462FA005ADA91 /* Storyboard.storyboard in Resources */,
 				862E549D179082C500AF5AC5 /* bg@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,8 +308,10 @@
 			files = (
 				862E54761790810800AF5AC5 /* RNAppDelegate.m in Sources */,
 				862E54A11790835100AF5AC5 /* LoginController.m in Sources */,
+				865B8C9917F463E5005ADA91 /* StoryboardMainController.m in Sources */,
 				862E549E1790834400AF5AC5 /* MainController.m in Sources */,
 				86A9968F17ECB6A500B91463 /* LoginTransitionDelegate.m in Sources */,
+				865B8C9C17F46611005ADA91 /* ModalController.m in Sources */,
 				862E54721790810800AF5AC5 /* main.m in Sources */,
 				862E54A4179089CA00AF5AC5 /* LoginTransitionController.m in Sources */,
 			);

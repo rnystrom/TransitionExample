@@ -16,7 +16,7 @@
 {
     // set both to NO to use the storyboard
     BOOL testCode = NO;
-    BOOL testNIB = YES;
+    BOOL testNIB = NO;
     
     if (testNIB || testCode) {
         self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];

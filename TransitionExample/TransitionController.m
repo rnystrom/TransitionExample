@@ -29,26 +29,55 @@ static NSTimeInterval const AnimatedTransitionDuration = 0.5f;
     UIView *to = [toController view];
     UIView *container = [ctx containerView];
     
-    CGRect fromFrame = from.frame;
-    CGRect toFrame = to.frame;
+    BOOL animateSlide = NO;
     
-    if (self.isPresenting) {
-        toFrame.origin.x = container.bounds.size.width;
-        fromFrame.origin.x = -container.bounds.size.width;
+    if (animateSlide) {
+        CGRect fromFrame = from.frame;
+        CGRect toFrame = to.frame;
+        
+        if (self.isPresenting) {
+            toFrame.origin.x = container.bounds.size.width;
+            fromFrame.origin.x = -container.bounds.size.width;
+        }
+        else {
+            toFrame.origin.x = - container.bounds.size.width;
+            fromFrame.origin.x = container.bounds.size.width;
+        }
+        
+        to.frame = toFrame;
+        
+        [container addSubview:to];
+        
+        [UIView animateWithDuration:[self transitionDuration:ctx] delay:0 usingSpringWithDamping:0.8  initialSpringVelocity:5 options:kNilOptions animations:^{
+            to.center = CGPointMake(CGRectGetWidth(container.bounds)/2, CGRectGetHeight(container.bounds)/2);
+            from.frame = fromFrame;
+        }completion:^(BOOL finished){ [ctx completeTransition:YES]; }];
     }
     else {
-        toFrame.origin.x = - container.bounds.size.width;
-        fromFrame.origin.x = container.bounds.size.width;
+        // Corrected code from Double Encore
+        // http://www.doubleencore.com/2013/09/ios-7-custom-transitions/
+        to.frame = container.bounds;
+        from.frame = container.bounds;
+        
+        if (! self.isPresenting) {
+            [container insertSubview:to belowSubview:from];
+        }
+        else {
+            to.transform = CGAffineTransformMakeScale(0, 0);
+            [container addSubview:to];
+        }
+        
+        [UIView animateKeyframesWithDuration:AnimatedTransitionDuration delay:0 options:0 animations:^{
+            if (! self.isPresenting) {
+                from.transform = CGAffineTransformMakeScale(0, 0);
+            }
+            else {
+                to.transform = CGAffineTransformIdentity;
+            }
+        } completion:^(BOOL finished) {
+            [ctx completeTransition:finished];
+        }];
     }
-    
-    to.frame = toFrame;
-    
-    [container addSubview:to];
-    
-    [UIView animateWithDuration:[self transitionDuration:ctx] delay:0 usingSpringWithDamping:0.8  initialSpringVelocity:5 options:kNilOptions animations:^{
-        to.center = CGPointMake(CGRectGetWidth(container.bounds)/2, CGRectGetHeight(container.bounds)/2);
-        from.frame = fromFrame;
-    }completion:^(BOOL finished){ [ctx completeTransition:YES]; }];
 }
 
 @end
